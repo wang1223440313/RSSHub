@@ -62,6 +62,12 @@
   username 为博主用户名，而非`xxx.hashnode.dev`中`xxx`所代表的 blog 地址。
   :::
 
+## HiFeng'Blog <Site url="hicairo.com"/>
+
+### 最近发表 <Site url="hicairo.com/" size="sm" />
+
+<Route namespace="hicairo" :data='{"path":"/","categories":["blog"],"example":"/hicairo","radar":[{"source":["hicairo.com/"]}],"name":"最近发表","maintainers":["cnkmmk"],"url":"hicairo.com/","location":"rss.ts"}' />
+
 ## Ian Spriggss <Site url="ianspriggs.com"/>
 
 ### Category <Site url="ianspriggs.com" size="sm" />
@@ -180,6 +186,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 在博客园主页的分类出可查看所有类型。例如，go 的分类地址为: `https://www.cnblogs.com/cate/go/`, 则: [`/cnblogs/cate/go`](https://rsshub.app/cnblogs/cate/go)
 
+## 不良林 <Site url="bulianglin.com"/>
+
+### 全部文章 <Site url="bulianglin.com/" size="sm" />
+
+<Route namespace="bulianglin" :data='{"path":"/","categories":["blog"],"example":"/bulianglin","radar":[{"source":["bulianglin.com/"]}],"name":"全部文章","maintainers":["cnkmmk"],"url":"bulianglin.com/","location":"rss.ts"}' />
+
 ## 财新博客 <Site url="caixin.com"/>
 
 > 网站部分内容需要付费订阅，RSS 仅做更新提醒，不含付费内容。
@@ -206,6 +218,12 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
   | -------- | -------- | -------- | -------- |
   | windows  | android  | tutorial | other    |
 
+## 电脑玩物 <Site url="playpcesor.com"/>
+
+### 每日精选文章 <Site url="playpcesor.com/" size="sm" />
+
+<Route namespace="playpcesor" :data='{"path":"/","categories":["blog"],"example":"/playpcesor","radar":[{"source":["playpcesor.com/"]}],"name":"每日精选文章","maintainers":["cnkmmk"],"url":"playpcesor.com/","location":"rss.ts"}' />
+
 ## 纷享销客 CRM <Site url="fxiaoke.com"/>
 
 ### 文章 <Site url="fxiaoke.com" size="sm" />
@@ -216,11 +234,29 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
   | -------- | -------- | -------- | --------------- | --------- |
   | news     | blog     | articles | about-influence | customers |
 
+## 国外主机测评 <Site url="zhujiceping.com"/>
+
+### 最新发布 <Site url="zhujiceping.com/" size="sm" />
+
+<Route namespace="zhujiceping" :data='{"path":"/","categories":["blog"],"example":"/zhujiceping","radar":[{"source":["zhujiceping.com/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"zhujiceping.com/","location":"rss.ts"}' />
+
 ## 虎皮椒 <Site url="www.xunhupay.com"/>
 
 ### 文章 <Site url="www.xunhupay.com/blog" size="sm" />
 
 <Route namespace="xunhupay" :data='{"path":"/blog","categories":["blog"],"example":"/xunhupay/blog","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["www.xunhupay.com/blog"]}],"name":"文章","maintainers":["Joey"],"url":"www.xunhupay.com/blog","location":"index.ts"}' />
+
+## 荒岛 <Site url="lala.im"/>
+
+### 最新发布 <Site url="lala.im/" size="sm" />
+
+<Route namespace="lala" :data='{"path":"/","categories":["blog"],"example":"/lala","radar":[{"source":["lala.im/"]}],"name":"最新发布","maintainers":["cnkmmk"],"url":"lala.im/","location":"rss.ts"}' />
+
+## 免費資源網路社群 <Site url="free.com.tw"/>
+
+### 最新文章 <Site url="free.com.tw/" size="sm" />
+
+<Route namespace="free" :data='{"path":"/","categories":["blog"],"example":"/free","radar":[{"source":["free.com.tw/"]}],"name":"最新文章","maintainers":["cnkmmk"],"url":"free.com.tw/","location":"rss.ts"}' />
 
 ## 十年之约 <Site url="www.foreverblog.cn"/>
 
@@ -241,6 +277,10 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 <Route namespace="xys" :data='{"path":"/new","categories":["blog"],"example":"/xys/new","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["xys.org/","xys.org/new.html"]}],"name":"新到资料","maintainers":["wenzhenl"],"url":"xys.org/","location":"new.ts"}' />
 
 ## 雨苁博客 <Site url="ddosi.org"/>
+
+### Unknown <Site url="ddosi.org/" size="sm" />
+
+<Route namespace="ddosi" :data='{"path":"/","radar":[{"source":["ddosi.org/"],"target":""}],"name":"Unknown","maintainers":["XinRoom"],"url":"ddosi.org/","location":"index.ts"}' />
 
 ### 分类 <Site url="ddosi.org/" size="sm" />
 
@@ -272,9 +312,9 @@ There are many tags, which can be obtained by clicking on a tag from the homepag
 
 ## 竹白 <Site url="zhubai.love"/>
 
-### Unknown <Site url="analy.zhubai.love/" size="sm" />
+### 上周热门 TOP 20 <Site url="analy.zhubai.love/" size="sm" />
 
-<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"Unknown","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' />
+<Route namespace="zhubai" :data='{"path":"/top20","categories":["blog"],"example":"/zhubai/top20","parameters":{},"features":{"requireConfig":false,"requirePuppeteer":false,"antiCrawler":false,"supportBT":false,"supportPodcast":false,"supportScihub":false},"radar":[{"source":["analy.zhubai.love/"]}],"name":"上周热门 TOP 20","maintainers":["nczitzk"],"url":"analy.zhubai.love/","location":"top20.ts"}' />
 
 ### 文章 <Site url="zhubai.love" size="sm" />
 

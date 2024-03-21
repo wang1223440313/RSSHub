@@ -282,7 +282,10 @@
       },
       "/music/user/events/:id": {
         "path": "/music/user/events/:id",
-        "name": "Unknown",
+        "categories": [
+          "multimedia"
+        ],
+        "name": "用户动态",
         "maintainers": [
           "Master-Hash"
         ],
@@ -607,10 +610,17 @@
   },
   "141jav": {
     "routes": {
-      "*": {
-        "path": "*",
-        "name": "Unknown",
-        "maintainers": [],
+      "/{.*}?": {
+        "path": "/{.*}?",
+        "categories": [
+          "multimedia"
+        ],
+        "name": "通用",
+        "maintainers": [
+          "cgkings",
+          "nczitzk"
+        ],
+        "description": "**类型**\n\n    | 最新 | 热门    | 随机   | 指定演员 | 指定标签 |\n    | ---- | ------- | ------ | -------- | -------- |\n    | new  | popular | random | actress  | tag      |\n\n    **关键词**\n\n    | 空 | 日期范围    | 演员名       | 标签名         |\n    | -- | ----------- | ------------ | -------------- |\n    |    | 7 / 30 / 60 | Yua%20Mikami | Adult%20Awards |\n\n    **示例说明**\n\n    -   `/141jav/new`\n\n        仅当类型为 `new` `popular` 或 `random` 时关键词为 **空**\n\n    -   `/141jav/popular/30`\n\n        `popular` `random` 类型的关键词可填写 `7` `30` 或 `60` 三个 **日期范围** 之一，分别对应 **7 天**、**30 天** 或 **60 天内**\n\n    -   `/141jav/actress/Yua%20Mikami`\n\n        `actress` 类型的关键词必须填写 **演员名** ，可在 [此处](https://141jav.com/actress) 演员单页链接中获取\n\n    -   `/141jav/tag/Adult%20Awards`\n\n        `tag` 类型的关键词必须填写 **标签名** 且标签中的 `/` 必须替换为 `%2F` ，可在 [此处](https://141jav.com/tag) 标签单页链接中获取\n\n    -   `/141jav/date/2020/07/30`\n\n        `date` 类型的关键词必须填写 **日期**",
         "location": "index.ts"
       }
     },
@@ -620,10 +630,17 @@
   },
   "141ppv": {
     "routes": {
-      "*": {
-        "path": "*",
-        "name": "Unknown",
-        "maintainers": [],
+      "/{.*}?": {
+        "path": "/{.*}?",
+        "categories": [
+          "multimedia"
+        ],
+        "name": "通用",
+        "maintainers": [
+          "cgkings",
+          "nczitzk"
+        ],
+        "description": "**类型**\n\n    | 最新 | 热门    | 随机   | 指定演员 | 指定标签 |\n    | ---- | ------- | ------ | -------- | -------- |\n    | new  | popular | random | actress  | tag      |\n\n    **关键词**\n\n    | 空 | 日期范围    | 演员名       | 标签名         |\n    | -- | ----------- | ------------ | -------------- |\n    |    | 7 / 30 / 60 | Yua%20Mikami | Adult%20Awards |\n\n    **示例说明**\n\n    -   `/141ppv/new`\n\n        仅当类型为 `new` `popular` 或 `random` 时关键词为 **空**\n\n    -   `/141ppv/popular/30`\n\n        `popular` `random` 类型的关键词可填写 `7` `30` 或 `60` 三个 **日期范围** 之一，分别对应 **7 天**、**30 天** 或 **60 天内**\n\n    -   `/141ppv/actress/Yua%20Mikami`\n\n        `actress` 类型的关键词必须填写 **演员名** ，可在 [此处](https://141ppv.com/actress) 演员单页链接中获取\n\n    -   `/141ppv/tag/Adult%20Awards`\n\n        `tag` 类型的关键词必须填写 **标签名** 且标签中的 `/` 必须替换为 `%2F` ，可在 [此处](https://141ppv.com/tag) 标签单页链接中获取\n\n    -   `/141ppv/date/2020/07/30`\n\n        `date` 类型的关键词必须填写 **日期**",
         "location": "index.ts"
       }
     },
@@ -981,7 +998,10 @@
           "/post/:type?/:order?",
           "/thread/:type?/:order?"
         ],
-        "name": "Unknown",
+        "name": "帖子",
+        "categories": [
+          "bbs"
+        ],
         "maintainers": [
           "EthanWng97",
           "DIYgod",
@@ -996,7 +1016,10 @@
           "/post/:type?/:order?",
           "/thread/:type?/:order?"
         ],
-        "name": "Unknown",
+        "name": "帖子",
+        "categories": [
+          "bbs"
+        ],
         "maintainers": [
           "EthanWng97",
           "DIYgod",
@@ -1121,10 +1144,15 @@
         "description": "| 24 小时热榜 | 资讯人气榜 | 资讯综合榜 | 资讯收藏榜 |\n  | ----------- | ---------- | ---------- | ---------- |\n  | 24          | renqi      | zonghe     | shoucang   |",
         "location": "hot-list.ts"
       },
-      "*": {
-        "path": "*",
-        "name": "Unknown",
-        "maintainers": [],
+      "/{.*}?": {
+        "path": "/{.*}?",
+        "categories": [
+          "new-media"
+        ],
+        "name": "资讯, 快讯, 用户文章, 主题文章, 专题文章, 搜索文章, 搜索快讯",
+        "maintainers": [
+          "nczitzk"
+        ],
         "location": "index.ts"
       }
     },
@@ -1142,7 +1170,10 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "游戏资讯",
+        "categories": [
+          "game"
+        ],
         "maintainers": [
           "sinchang",
           "jacky2001114",
@@ -1310,28 +1341,21 @@
   },
   "4ksj": {
     "routes": {
-      "/forum/:id?": {
-        "path": "/forum/:id?",
-        "categories": [
-          "multimedia"
-        ],
-        "example": "/4ksj/forum",
-        "parameters": {
-          "id": "分类 id，默认为最新4K电影"
-        },
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
+      "/:id?": {
+        "path": "/:id?",
         "name": "分类",
+        "url": "4ksj.com",
         "maintainers": [
           "nczitzk"
         ],
-        "description": ":::tip\n  若订阅 [最新 4K 电影](https://www.4ksj.com/forum-2-1.html)，网址为 `https://www.4ksj.com/forum-2-1.html`。截取 `https://www.4ksj.com/forum-` 到末尾 `.html` 的部分 `2-1` 作为参数，此时路由为 [`/4ksj/forum/2-1`](https://rsshub.app/4ksj/forum/2-1)。\n\n  若订阅子分类 [Dolby Vision 纪录片 4K 电影](https://www.4ksj.com/forum-4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1.html)，网址为 `https://www.4ksj.com/forum-4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1.html`。截取 `https://www.4ksj.com/forum-` 到末尾 `.html` 的部分 `4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1` 作为参数，此时路由为 [`/4ksj/forum/4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1`](https://rsshub.app/4ksj/forum/4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1)。\n  :::",
+        "example": "/4ksj/4k-uhd-1",
+        "parameters": {
+          "id": "分类 id，默认为最新4K电影"
+        },
+        "description": ":::tip\n  若订阅 [最新 4K 电影](https://www.4ksj.com/4k-uhd-1.html)，网址为 `https://www.4ksj.com/4k-uhd-1.html`。截取 `https://www.4ksj.com/` 到末尾 `.html` 的部分 `4k-uhd-1` 作为参数，此时路由为 [`/4ksj/4k-uhd-1`](https://rsshub.app/4ksj/4k-uhd-1)。\n\n  若订阅子分类 [Dolby Vision 动作 4K 电影](https://www.4ksj.com/4k-uhd-s7-display-3-dytypes-1-1.html)，网址为 `https://www.4ksj.com/4k-uhd-s7-display-3-dytypes-1-1.html`。截取 `https://www.4ksj.com/forum-` 到末尾 `.html` 的部分 `4kdianying-s7-dianyingbiaozhun-3-dytypes-9-1` 作为参数，此时路由为 [`/4ksj/4k-uhd-s7-display-3-dytypes-1-1`](https://rsshub.app/4ksj/4k-uhd-s7-display-3-dytypes-1-1)。\n  :::",
+        "categories": [
+          "multimedia"
+        ],
         "location": "forum.ts"
       }
     },
@@ -2076,8 +2100,17 @@
             "target": "/:category"
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "parameters": {
+          "category": "Category, can be found in the URL, can also be filled in with the `documentId` in the source code of the page, `news/justin` as **Just In** by default"
+        },
+        "name": "Channel & Topic",
+        "categories": [
+          "traditional-media"
+        ],
+        "description": ":::tip\n    All Topics in [Topic Library](https://abc.net.au/news/topics) are supported, you can fill in the field after `topic` in its URL, or fill in the `documentId`.\n\n    For example, the URL for [Computer Science](https://www.abc.net.au/news/topic/computer-science) is `https://www.abc.net.au/news/topic/computer-science`, the `category` is `news/topic/computer-science`, and the `documentId` of the Topic is `2302`, so the route is [/abc/news/topic/computer-science](https://rsshub.app/abc/news/topic/computer-science) and [/abc/2302](https://rsshub.app/abc/2302).\n\n    The supported channels are all listed in the table below. For other channels, please find the `documentId` in the source code of the channel page and fill it in as above.\n    :::",
+        "maintainers": [
+          "nczitzk"
+        ],
         "location": "index.ts"
       }
     },
@@ -2159,7 +2192,7 @@
             "target": ""
           }
         ],
-        "name": "Unknown",
+        "name": "存档列表",
         "maintainers": [
           "zhenhappy"
         ],
@@ -2176,8 +2209,10 @@
             "target": ""
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "存档列表 - NSFW",
+        "maintainers": [
+          "zhenhappy"
+        ],
         "url": "ahhhhfs.com/",
         "location": "nsfw.ts"
       }
@@ -2247,7 +2282,13 @@
             "target": "/user/video/:id"
           }
         ],
-        "name": "Unknown",
+        "name": "用户投稿",
+        "parameters": {
+          "uid": "用户 UID"
+        },
+        "categories": [
+          "anime"
+        ],
         "maintainers": [
           "wdssmq"
         ],
@@ -4861,7 +4902,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "當季新番",
         "maintainers": [
           "devinmugen"
         ],
@@ -5205,8 +5246,20 @@
     "routes": {
       "/:site?/:channel?": {
         "path": "/:site?/:channel?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "News",
+        "maintainers": [
+          "HenryQW",
+          "DIYgod"
+        ],
+        "example": "/bbc/world-asia",
+        "parameters": {
+          "site": "语言，简体或繁体中文",
+          "channel": "channel, default to `top stories`"
+        },
+        "categories": [
+          "traditional-media"
+        ],
+        "description": "Provides a better reading experience (full text articles) over the official ones.\n\n    Support major channels, refer to [BBC RSS feeds](https://www.bbc.co.uk/news/10628494). Eg, `business` for `https://feeds.bbci.co.uk/news/business/rss.xml`.\n\n    -   Channel contains sub-directories, such as `https://feeds.bbci.co.uk/news/world/asia/rss.xml`, replace `/` with `-`, `/bbc/world-asia`.",
         "location": "index.ts"
       }
     },
@@ -5532,23 +5585,16 @@
         ],
         "location": "audio.ts"
       },
-      "/bangumi/:seasonid": {
-        "path": [
-          "/bangumi/:seasonid",
-          "/bangumi/media/:mediaid"
-        ],
-        "name": "Unknown",
-        "maintainers": [
-          "DIYgod"
-        ],
-        "location": "bangumi.ts"
-      },
       "/bangumi/media/:mediaid": {
-        "path": [
-          "/bangumi/:seasonid",
-          "/bangumi/media/:mediaid"
+        "path": "/bangumi/media/:mediaid",
+        "name": "番剧",
+        "parameters": {
+          "mediaid": "番剧媒体 id, 番剧主页 URL 中获取"
+        },
+        "example": "/bilibili/bangumi/media/9192",
+        "categories": [
+          "social-media"
         ],
-        "name": "Unknown",
         "maintainers": [
           "DIYgod"
         ],
@@ -6238,10 +6284,21 @@
       },
       "/ranking/:rid?/:day?/:arc_type?/:disableEmbed?": {
         "path": "/ranking/:rid?/:day?/:arc_type?/:disableEmbed?",
-        "name": "Unknown",
+        "name": "排行榜",
         "maintainers": [
           "DIYgod"
         ],
+        "categories": [
+          "social-media"
+        ],
+        "example": "/bilibili/ranking/0/3/1",
+        "parameters": {
+          "rid": "排行榜分区 id, 默认 0",
+          "day": "时间跨度, 可为 1 3 7 30",
+          "arc_type": "投稿时间, 可为 0(全部投稿) 1(近期投稿) , 默认 1",
+          "disableEmbed": "默认为开启内嵌视频, 任意值为关闭"
+        },
+        "description": "| 全站 | 动画 | 国创相关 | 音乐 | 舞蹈 | 游戏 | 科技 | 数码 | 生活 | 鬼畜 | 时尚 | 娱乐 | 影视 |\n    | ---- | ---- | -------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    | 0    | 1    | 168      | 3    | 129  | 4    | 36   | 188  | 160  | 119  | 155  | 5    | 181  |",
         "location": "ranking.ts"
       },
       "/readlist/:listid": {
@@ -6409,8 +6466,11 @@
       },
       "/user/video-all/:uid/:disableEmbed?": {
         "path": "/user/video-all/:uid/:disableEmbed?",
-        "name": "Unknown",
+        "name": "用户所有视频",
         "maintainers": [],
+        "categories": [
+          "social-media"
+        ],
         "location": "video-all.ts"
       },
       "/user/video/:uid/:disableEmbed?": {
@@ -7916,20 +7976,23 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/bulianglin",
         "radar": [
           {
             "source": [
               "bulianglin.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "全部文章",
         "maintainers": [
           "cnkmmk"
         ],
         "url": "bulianglin.com/",
-        "location": "bulianglin.ts"
+        "location": "rss.ts"
       }
     },
     "name": "不良林",
@@ -8957,7 +9020,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "研招网通知公告",
         "maintainers": [
           "shengmaosu"
         ],
@@ -10159,7 +10222,8 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "各学位授予单位学位证书上网进度",
+        "description": "| 省市             | 代号 |\n    | ---------------- | ---- |\n    | 北京市           | 11   |\n    | 天津市           | 12   |\n    | 河北省           | 13   |\n    | 山西省           | 14   |\n    | 内蒙古自治区     | 15   |\n    | 辽宁省           | 21   |\n    | 吉林省           | 22   |\n    | 黑龙江省         | 23   |\n    | 上海市           | 31   |\n    | 江苏省           | 32   |\n    | 浙江省           | 33   |\n    | 安徽省           | 34   |\n    | 福建省           | 35   |\n    | 江西省           | 36   |\n    | 山东省           | 37   |\n    | 河南省           | 41   |\n    | 湖北省           | 42   |\n    | 湖南省           | 43   |\n    | 广东省           | 44   |\n    | 广西壮族自治区   | 45   |\n    | 海南省           | 46   |\n    | 重庆市           | 50   |\n    | 四川省           | 51   |\n    | 贵州省           | 52   |\n    | 云南省           | 53   |\n    | 西藏自治区       | 54   |\n    | 陕西省           | 61   |\n    | 甘肃省           | 62   |\n    | 青海省           | 63   |\n    | 宁夏回族自治区   | 64   |\n    | 新疆维吾尔自治区 | 65   |\n    | 台湾             | 71   |",
         "maintainers": [
           "TonyRL"
         ],
@@ -10969,7 +11033,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "分类 (网页爬虫方法)",
         "maintainers": [
           "dzx-dzx"
         ],
@@ -11440,7 +11504,8 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "作者期刊文献",
+        "description": ":::tip\n    可能仅限中国大陆服务器访问，以实际情况为准。\n    :::",
         "maintainers": [
           "harveyqiu",
           "Derekmini"
@@ -12448,8 +12513,14 @@
     "routes": {
       "/:category{.+}?": {
         "path": "/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "栏目",
+        "parameters": {
+          "category": "分类，见下表，默认为首页"
+        },
+        "maintainers": [
+          "nczitzk"
+        ],
+        "description": "| 要闻 | 公司 | 市场 | 基金 |\n    | ---- | ---- | ---- | ---- |\n    | xwzx | ssgs | gppd | tzjj |\n\n    | 科创 | 产经   | 期货     | 海外   |\n    | ---- | ------ | -------- | ------ |\n    | 5g   | cj2020 | zzqh2020 | hw2020 |\n\n    <details>\n      <summary>更多栏目</summary>\n\n      #### 要闻\n\n      | 财经要闻 | 观点评论 | 民生消费  |\n      | -------- | -------- | --------- |\n      | xwzx/hg  | xwzx/jr  | xwzx/msxf |\n\n      #### 公司\n\n      | 公司要闻  | 公司深度  | 公司巡礼  |\n      | --------- | --------- | --------- |\n      | ssgs/gsxw | ssgs/gssd | ssgs/gsxl |\n\n      #### 市场\n\n      | A 股市场  | 港股资讯  | 债市研究  | 海外报道  | 期货报道  |\n      | --------- | --------- | --------- | --------- | --------- |\n      | gppd/gsyj | gppd/ggzx | gppd/zqxw | gppd/hwbd | gppd/qhbd |\n\n      #### 基金\n\n      | 基金动态  | 基金视点  | 基金持仓  | 私募基金  | 基民学苑  |\n      | --------- | --------- | --------- | --------- | --------- |\n      | tzjj/jjdt | tzjj/jjks | tzjj/jjcs | tzjj/smjj | tzjj/tjdh |\n\n      #### 机构\n\n      | 券商 | 银行 | 保险 |\n      | ---- | ---- | ---- |\n      | qs   | yh   | bx   |\n\n      #### 其他\n\n      | 中证快讯 7x24 | IPO 鉴真 | 公司能见度 |\n      | ------------- | -------- | ---------- |\n      | sylm/jsbd     | yc/ipojz | yc/gsnjd   |\n    </details>",
         "location": "index.ts"
       },
       "/video/:category?": {
@@ -12469,7 +12540,8 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "中证视频",
+        "description": "| 今日聚焦 | 传闻求证 | 高端访谈 | 投教课堂 | 直播汇 |\n    | -------- | -------- | -------- | -------- | ------ |",
         "maintainers": [
           "nczitzk"
         ],
@@ -12495,7 +12567,10 @@
       }
     },
     "name": "中证网",
-    "url": "cs.com.cn"
+    "url": "cs.com.cn",
+    "categories": [
+      "finance"
+    ]
   },
   "csdn": {
     "routes": {
@@ -15195,7 +15270,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "豆瓣豆列",
         "maintainers": [
           "LogicJake",
           "honue"
@@ -15321,7 +15396,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "新书速递",
         "maintainers": [
           "fengkx"
         ],
@@ -18819,15 +18894,18 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/free",
         "radar": [
           {
             "source": [
               "free.com.tw/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "最新文章",
         "maintainers": [
           "cnkmmk"
         ],
@@ -18880,6 +18958,27 @@
     "routes": {
       "/:category?": {
         "path": "/:category?",
+        "name": "Book List",
+        "url": "freecomputerbooks.com",
+        "maintainers": [
+          "cubroe"
+        ],
+        "example": "/freecomputerbooks/compscAlgorithmBooks",
+        "parameters": {
+          "category": "A category id., which should be the HTML file name (but **without** the `.html` suffix) in the URL path of a book list page."
+        },
+        "categories": [
+          "reading"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
         "radar": [
           {
             "source": [
@@ -18889,9 +18988,6 @@
             "target": ""
           }
         ],
-        "name": "Unknown",
-        "maintainers": [],
-        "url": "freecomputerbooks.com/",
         "location": "index.ts"
       }
     },
@@ -18924,7 +19020,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "公众号",
         "maintainers": [
           "TonyRL"
         ],
@@ -21388,8 +21484,21 @@
       },
       "/chongqing/gzw/:category{.+}?": {
         "path": "/chongqing/gzw/:category{.+}?",
-        "name": "Unknown",
-        "maintainers": [],
+        "parameters": {
+          "category": "分类，见下表，默认为通知公告"
+        },
+        "name": "重庆市人民政府 国有资产监督管理委员会",
+        "url": "gzw.cq.gov.cn",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "radar": [
+          {
+            "source": "gzw.cq.gov.cn/*category",
+            "target": "/chongqing/gzw/*category"
+          }
+        ],
+        "description": "| 通知公告  | 国企资讯 | 国企简介 | 国企招聘 |\n    | --------- | -------- | -------- | -------- |\n    | tzgg_191 | gqdj     | gqjj     | gqzp     |",
         "location": "chongqing/gzw.ts"
       },
       "/chongqing/rsks": {
@@ -21398,15 +21507,6 @@
           "government"
         ],
         "example": "/gov/chongqing/rsks",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
         "radar": [
           {
             "source": [
@@ -21414,27 +21514,22 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "重庆市人民政府 人力社保局 - 人事考试通知",
         "maintainers": [
           "Mai19930513"
         ],
         "url": "rlsbj.cq.gov.cn/",
         "location": "chongqing/rsks.ts"
       },
-      "/chongqing/sydwgkzp": {
-        "path": "/chongqing/sydwgkzp",
+      "/chongqing/sydwgkzp/:year?": {
+        "path": "/chongqing/sydwgkzp/:year?",
+        "url": "rlsbj.cq.gov.cn/",
         "categories": [
           "government"
         ],
         "example": "/gov/chongqing/sydwgkzp",
-        "parameters": {},
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
+        "parameters": {
+          "year": "需要订阅的年份，格式为`YYYY`，必须小于等于当前年份，默认为当前年份"
         },
         "radar": [
           {
@@ -21443,12 +21538,10 @@
             ]
           }
         ],
-        "name": "人力社保局",
+        "name": "重庆市人民政府 人力社保局 - 事业单位公开招聘",
         "maintainers": [
           "MajexH"
         ],
-        "url": "rlsbj.cq.gov.cn/",
-        "description": "#### 人事考试通知 {#chong-qing-shi-ren-min-zheng-fu-ren-li-she-bao-ju-ren-shi-kao-shi-tong-zhi}\n\n\n#### 事业单位公开招聘 {#chong-qing-shi-ren-min-zheng-fu-ren-li-she-bao-ju-shi-ye-dan-wei-gong-kai-zhao-pin}",
         "location": "chongqing/sydwgkzp.ts"
       },
       "/cmse/fxrw": {
@@ -22901,8 +22994,26 @@
       },
       "/stats/*": {
         "path": "/stats/*",
-        "name": "Unknown",
-        "maintainers": [],
+        "name": "国家统计局 通用",
+        "url": "www.stats.gov.cn",
+        "categories": [
+          "government"
+        ],
+        "maintainers": [
+          "bigfei",
+          "nczitzk"
+        ],
+        "example": "/stats/sj/zxfb",
+        "radar": [
+          {
+            "title": "国家统计局 通用",
+            "source": [
+              "www.stats.gov.cn/*path"
+            ],
+            "target": "/gov/stats/*path"
+          }
+        ],
+        "description": "::: tip\n    路径处填写对应页面 URL 中 `http://www.stats.gov.cn/` 后的字段。下面是一个例子。\n\n    若订阅 [数据 > 数据解读](http://www.stats.gov.cn/sj/sjjd/) 则将对应页面 URL `http://www.stats.gov.cn/sj/sjjd/` 中 `http://www.stats.gov.cn/` 后的字段 `sj/sjjd` 作为路径填入。此时路由为 [`/gov/stats/sj/sjjd`](https://rsshub.app/gov/stats/sj/sjjd)\n\n    若订阅 [新闻 > 时政要闻 > 中央精神](http://www.stats.gov.cn/xw/szyw/zyjs/) 则将对应页面 URL `http://www.stats.gov.cn/xw/szyw/zyjs/` 中 `http://www.stats.gov.cn/` 后的字段 `xw/szyw/zyjs` 作为路径填入。此时路由为 [`/gov/stats/xw/szyw/zyjs`](https://rsshub.app/gov/stats/xw/szyw/zyjs)\n    :::",
         "location": "stats/index.ts"
       },
       "/suzhou/doc": {
@@ -24913,15 +25024,18 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/hicairo",
         "radar": [
           {
             "source": [
               "hicairo.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "最近发表",
         "maintainers": [
           "cnkmmk"
         ],
@@ -25866,15 +25980,18 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "study"
+        ],
+        "example": "/howtoforge",
         "radar": [
           {
             "source": [
               "howtoforge.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "Tutorials",
         "maintainers": [
           "cnkmmk"
         ],
@@ -26121,7 +26238,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "大型招聘会",
         "maintainers": [
           "Derekmini"
         ],
@@ -26175,10 +26292,11 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "就业服务平台",
         "maintainers": [
           "Derekmini"
         ],
+        "description": "| 通知公告 | 热点新闻 |\n    | :------: | :------: |\n    |   tzgg   |   rdxw   |",
         "location": "job/list.ts"
       },
       "/uae/:id": {
@@ -27867,7 +27985,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "文章",
         "maintainers": [
           "GensouSakuya",
           "kt286"
@@ -30468,6 +30586,35 @@
     "name": "Kantar Worldpanel",
     "url": "kantarworldpanel.com"
   },
+  "kaopu": {
+    "routes": {
+      "/news/:language?": {
+        "path": "/news/:language?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/news/zh-hans, /news/zh-hant",
+        "parameters": {
+          "language": "语言"
+        },
+        "radar": [
+          {
+            "source": [
+              "kaopu.news/"
+            ]
+          }
+        ],
+        "name": "全部",
+        "maintainers": [
+          "fashioncj"
+        ],
+        "description": "| 简体中文    | 繁体中文     | \n  | ------- | -------- | \n  | zh-hans | zh-hant | ",
+        "location": "news.ts"
+      }
+    },
+    "name": "靠谱新闻",
+    "url": "kaopu.news"
+  },
   "kbs": {
     "routes": {
       "/news/:category?/:language?": {
@@ -31031,15 +31178,18 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/lala",
         "radar": [
           {
             "source": [
               "lala.im/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "最新发布",
         "maintainers": [
           "cnkmmk"
         ],
@@ -31076,7 +31226,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "直播间开播",
         "maintainers": [
           "MittWillson"
         ],
@@ -34287,7 +34437,7 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "分类",
         "maintainers": [
           "zhuan-zhu"
         ],
@@ -36511,7 +36661,8 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "政治外交",
+        "description": "| 政治     | 经济    | 社会    | 展览预告 | 焦点专题           | 深度报道 | 话题         | 日本信息库 | 日本一蹩      | 人物访谈 | 编辑部通告    |\n    | -------- | ------- | ------- | -------- | ------------------ | -------- | ------------ | ---------- | ------------- | -------- | ------------- |\n    | Politics | Economy | Society | Culture  | Science,Technology | In-depth | japan-topics | japan-data | japan-glances | People   | Announcements |",
         "maintainers": [
           "laampui"
         ],
@@ -37437,7 +37588,7 @@
             "target": "/weatheralarm"
           }
         ],
-        "name": "Unknown",
+        "name": "全国气象预警",
         "maintainers": [
           "ylc395"
         ],
@@ -39778,6 +39929,35 @@
   },
   "ouc": {
     "routes": {
+      "/hqsz": {
+        "path": "/hqsz",
+        "categories": [
+          "university"
+        ],
+        "example": "/ouc/hqsz",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hqsz.ouc.edu.cn/news.html"
+            ]
+          }
+        ],
+        "name": "后勤公告通知",
+        "maintainers": [
+          "ladeng07"
+        ],
+        "url": "hqsz.ouc.edu.cn/news.html?typeId=02",
+        "location": "hqsz.ts"
+      },
       "/it/postgraduate": {
         "path": "/it/postgraduate",
         "categories": [
@@ -41716,15 +41896,18 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/playpcesor",
         "radar": [
           {
             "source": [
               "playpcesor.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "每日精选文章",
         "maintainers": [
           "cnkmmk"
         ],
@@ -42171,13 +42354,15 @@
   },
   "priconne-redive": {
     "routes": {
-      "/news": {
-        "path": "/news",
+      "/news/:location?": {
+        "path": "/news/:location?",
         "categories": [
           "game"
         ],
         "example": "/priconne-redive/news",
-        "parameters": {},
+        "parameters": {
+          "location": "区域，默认日服"
+        },
         "features": {
           "requireConfig": false,
           "requirePuppeteer": false,
@@ -42193,11 +42378,13 @@
             ]
           }
         ],
-        "name": "日服公告",
+        "name": "最新公告",
         "maintainers": [
-          "SayaSS"
+          "SayaSS",
+          "frankcwl"
         ],
         "url": "priconne-redive.jp/news",
+        "description": "location\n\n    | 国服  | 台服  | 日服  |\n    | ----- | ----- | ---- |\n    | zh-cn | zh-tw | jp   |",
         "location": "news.ts"
       }
     },
@@ -43016,7 +43203,7 @@
             "target": "/:cate"
           }
         ],
-        "name": "Unknown",
+        "name": "频道",
         "maintainers": [
           "Fatpandac",
           "nczitzk"
@@ -49877,6 +50064,35 @@
     "name": "中国科技网",
     "url": "digitalpaper.stdaily.com"
   },
+  "steam": {
+    "routes": {
+      "/search/:params": {
+        "path": "/search/:params",
+        "categories": [
+          "game"
+        ],
+        "example": "/steam/search/sort_by=Released_DESC&tags=492&category1=10&os=linux",
+        "parameters": {
+          "params": "Query parameters for a Steam Store search."
+        },
+        "radar": [
+          {
+            "source": [
+              "store.steampowered.com",
+              "store.steampowered.com/search/:params"
+            ]
+          }
+        ],
+        "name": "Store Search",
+        "maintainers": [
+          "moppman"
+        ],
+        "location": "search.ts"
+      }
+    },
+    "name": "Steam",
+    "url": "store.steampowered.com"
+  },
   "stheadline": {
     "routes": {
       "/std/realtime/:category{.+}?": {
@@ -50750,7 +50966,8 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "粤港澳发展研究院",
+        "description": "| 人才招聘   | 人才培养      | 新闻动态 | 通知公告 | 专家观点 |\n    | ---------- | ------------- | -------- | -------- | -------- |\n    | jobopening | personnelplan | news     | notice   | opinion  |\n\n    | 研究成果 | 研究论文 | 学术著作 | 形势政策 |\n    | -------- | -------- | -------- | -------- |\n    | results  | papers   | writings | policy   |",
         "maintainers": [
           "TonyRL"
         ],
@@ -52043,6 +52260,36 @@
     },
     "name": "台灣事實查核中心",
     "url": "tfc-taiwan.org.tw"
+  },
+  "tgbus": {
+    "routes": {
+      "/list/:category": {
+        "path": "/list/:category",
+        "parameters": {
+          "category": "列表分类，见下表"
+        },
+        "categories": [
+          "game"
+        ],
+        "example": "/tgbus/list/news",
+        "radar": [
+          {
+            "source": [
+              "www.tgbus.com/list/:category/"
+            ],
+            "target": "/list/:category"
+          }
+        ],
+        "name": "文章列表",
+        "maintainers": [
+          "Xzonn"
+        ],
+        "description": "| 最新资讯 | 游戏评测 | 游戏视频 | 巴士首页特稿 | 硬件资讯 |\n    | -------- | -------- | -------- | ------------ | -------- |\n    | news     | review   | video    | special      | hardware |",
+        "location": "list.ts"
+      }
+    },
+    "name": "电玩巴士 TGBUS",
+    "url": "tgbus.com"
   },
   "theatlantic": {
     "routes": {
@@ -53905,26 +54152,25 @@
   },
   "twitter": {
     "routes": {
-      "/collection/:uid/:collectionId/:routeParams?": {
-        "path": "/collection/:uid/:collectionId/:routeParams?",
+      "/home/:routeParams?": {
+        "path": "/home/:routeParams?",
         "categories": [
           "social-media"
         ],
-        "example": "/twitter/collection/DIYgod/1527857429467172864",
-        "parameters": {
-          "uid": "username, should match the generated token",
-          "collectionId": "collection ID, can be found in URL",
-          "routeParams": "extra parameters, see the table above"
-        },
+        "example": "/twitter/home",
         "features": {
           "requireConfig": [
             {
               "name": "TWITTER_USERNAME",
-              "description": ""
+              "description": "Please see above for details."
             },
             {
               "name": "TWITTER_PASSWORD",
-              "description": ""
+              "description": "Please see above for details."
+            },
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
             }
           ],
           "requirePuppeteer": false,
@@ -53933,46 +54179,19 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Collection",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "description": ":::warning\n  This route requires Twitter token's corresponding id, therefore it's only available when self-hosting, refer to the [Deploy Guide](/install/#route-specific-configurations) for route-specific configurations.\n  :::",
-        "location": "collection.ts"
-      },
-      "/followings/:id/:routeParams?": {
-        "path": "/followings/:id/:routeParams?",
-        "categories": [
-          "social-media"
-        ],
-        "example": "/twitter/followings/DIYgod",
-        "parameters": {
-          "id": "username",
-          "routeParams": "extra parameters, see the table above"
-        },
-        "features": {
-          "requireConfig": [
-            {
-              "name": "TWITTER_USERNAME",
-              "description": ""
-            },
-            {
-              "name": "TWITTER_PASSWORD",
-              "description": ""
-            }
-          ],
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "name": "User following timeline",
+        "name": "Home timeline",
         "maintainers": [
           "DIYgod"
         ],
-        "description": ":::warning\n  This route requires Twitter token's corresponding id, therefore it's only available when self-hosting, refer to the [Deploy Guide](/install/#route-specific-configurations) for route-specific configurations.\n  :::",
-        "location": "followings.ts"
+        "radar": [
+          {
+            "source": [
+              "twitter.com/home"
+            ],
+            "target": "/home"
+          }
+        ],
+        "location": "home.ts"
       },
       "/keyword/:keyword/:routeParams?": {
         "path": "/keyword/:keyword/:routeParams?",
@@ -53988,11 +54207,15 @@
           "requireConfig": [
             {
               "name": "TWITTER_USERNAME",
-              "description": ""
+              "description": "Please see above for details."
             },
             {
               "name": "TWITTER_PASSWORD",
-              "description": ""
+              "description": "Please see above for details."
+            },
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
             }
           ],
           "requirePuppeteer": false,
@@ -54040,8 +54263,8 @@
         ],
         "location": "likes.ts"
       },
-      "/list/:id/:name/:routeParams?": {
-        "path": "/list/:id/:name/:routeParams?",
+      "/list/:id/:routeParams?": {
+        "path": "/list/:id/:routeParams?",
         "categories": [
           "social-media"
         ],
@@ -54052,7 +54275,20 @@
           "routeParams": "extra parameters, see the table above"
         },
         "features": {
-          "requireConfig": false,
+          "requireConfig": [
+            {
+              "name": "TWITTER_USERNAME",
+              "description": "Please see above for details."
+            },
+            {
+              "name": "TWITTER_PASSWORD",
+              "description": "Please see above for details."
+            },
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
+            }
+          ],
           "requirePuppeteer": false,
           "antiCrawler": false,
           "supportBT": false,
@@ -54061,7 +54297,16 @@
         },
         "name": "List timeline",
         "maintainers": [
+          "DIYgod",
           "xyqfer"
+        ],
+        "radar": [
+          {
+            "source": [
+              "twitter.com/i/lists/:id"
+            ],
+            "target": "/list/:id"
+          }
         ],
         "location": "list.ts"
       },
@@ -54079,11 +54324,15 @@
           "requireConfig": [
             {
               "name": "TWITTER_USERNAME",
-              "description": ""
+              "description": "Please see above for details."
             },
             {
               "name": "TWITTER_PASSWORD",
-              "description": ""
+              "description": "Please see above for details."
+            },
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
             }
           ],
           "requirePuppeteer": false,
@@ -54094,6 +54343,7 @@
         },
         "name": "User media",
         "maintainers": [
+          "DIYgod",
           "yindaheng98",
           "Rongronggg9"
         ],
@@ -54145,11 +54395,11 @@
           "requireConfig": [
             {
               "name": "TWITTER_USERNAME",
-              "description": ""
+              "description": "Please see above for details."
             },
             {
               "name": "TWITTER_PASSWORD",
-              "description": ""
+              "description": "Please see above for details."
             }
           ],
           "requirePuppeteer": false,
@@ -54179,11 +54429,15 @@
           "requireConfig": [
             {
               "name": "TWITTER_USERNAME",
-              "description": ""
+              "description": "Please see above for details."
             },
             {
               "name": "TWITTER_PASSWORD",
-              "description": ""
+              "description": "Please see above for details."
+            },
+            {
+              "name": "TWITTER_COOKIE",
+              "description": "Please see above for details."
             }
           ],
           "requirePuppeteer": false,
@@ -54211,7 +54465,7 @@
     },
     "name": "Twitter",
     "url": "twitter.com",
-    "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `excludeReplies`               | Exclude replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />"
+    "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `excludeReplies`               | Exclude replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />\n\nCurrently supports two authentication methods:\n\n- Using TWITTER_COOKIE (recommended): Configure the cookies of logged-in Twitter Web, at least including the fields auth_token and ct0. RSSHub will use this information to directly access Twitter's web API to obtain data.\n\n- Using TWITTER_USERNAME TWITTER_PASSWORD: Configure the Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.\n"
   },
   "twreporter": {
     "routes": {
@@ -55389,6 +55643,36 @@
   },
   "usenix": {
     "routes": {
+      "/loginonline": {
+        "path": "/loginonline",
+        "categories": [
+          "journal"
+        ],
+        "example": "/usenix/loginonline",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "usenix.org/publications/loginonline",
+              "usenix.org/publications",
+              "usenix.org/"
+            ]
+          }
+        ],
+        "name": ";login:",
+        "maintainers": [
+          "wu-yufei"
+        ],
+        "location": "loginonline.ts"
+      },
       "/usenix-security-sympoium": {
         "path": "/usenix-security-sympoium",
         "categories": [
@@ -58466,6 +58750,79 @@
     "name": "盒心光环",
     "url": "xboxfan.com"
   },
+  "xiaoheihe": {
+    "routes": {
+      "/discount/:platform": {
+        "path": "/discount/:platform",
+        "categories": [
+          "game"
+        ],
+        "example": "/xiaoheihe/discount/pc",
+        "parameters": {
+          "platform": "平台分类，见下表"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "游戏折扣",
+        "maintainers": [
+          "tssujt"
+        ],
+        "description": "| PC  | Switch  | PSN   | Xbox |\n  | ----- | ------ | ----- | ----- |\n  | pc    | switch | psn   | xbox  |",
+        "location": "discount.ts"
+      },
+      "/news": {
+        "path": "/news",
+        "categories": [
+          "game"
+        ],
+        "example": "/xiaoheihe/news",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "游戏新闻",
+        "maintainers": [
+          "tssujt"
+        ],
+        "location": "news.ts"
+      },
+      "/user/:id": {
+        "path": "/user/:id",
+        "categories": [
+          "game"
+        ],
+        "example": "/xiaoheihe/user/30664023",
+        "parameters": {
+          "id": "用户 ID"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "用户动态",
+        "maintainers": [
+          "tssujt"
+        ],
+        "location": "user.ts"
+      }
+    },
+    "name": "小黑盒",
+    "url": "xiaoheihe.cn"
+  },
   "xiaohongshu": {
     "routes": {
       "/board/:board_id": {
@@ -61226,7 +61583,8 @@
             "target": "/user/:id"
           }
         ],
-        "name": "Unknown",
+        "name": "用户作品",
+        "description": "  例如:\n\n    站酷的个人主页 `https://baiyong.zcool.com.cn` 对应 rss 路径 `/zcool/user/baiyong`\n\n    站酷的个人主页 `https://www.zcool.com.cn/u/568339` 对应 rss 路径 `/zcool/user/568339`",
         "maintainers": [
           "junbaor"
         ],
@@ -61302,7 +61660,8 @@
             "target": "/more/:category"
           }
         ],
-        "name": "Unknown",
+        "name": "滚动新闻",
+        "description": "\n| NBA | 足球  | 电竞     | 综合   |\n| --- | ----- | -------- | ------ |\n| nba | zuqiu | dianjing | zonghe |",
         "maintainers": [
           "nczitzk"
         ],
@@ -62009,7 +62368,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "xhu - 话题",
         "maintainers": [
           "JimenezLi"
         ],
@@ -62195,7 +62554,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "上周热门 TOP 20",
         "maintainers": [
           "nczitzk"
         ],
@@ -62210,15 +62569,18 @@
     "routes": {
       "/": {
         "path": "/",
+        "categories": [
+          "blog"
+        ],
+        "example": "/zhujiceping",
         "radar": [
           {
             "source": [
               "zhujiceping.com/"
-            ],
-            "target": ""
+            ]
           }
         ],
-        "name": "Unknown",
+        "name": "最新发布",
         "maintainers": [
           "cnkmmk"
         ],
@@ -62253,7 +62615,7 @@
             ]
           }
         ],
-        "name": "Unknown",
+        "name": "全国今日生猪价格",
         "maintainers": [],
         "url": "zhujia.zhuwang.cc/",
         "location": "index.ts"
@@ -62457,7 +62819,8 @@
           "supportPodcast": false,
           "supportScihub": false
         },
-        "name": "Unknown",
+        "name": "软件学院",
+        "description": "| 全部通知 | 招生信息 | 教务管理 | 论文管理 | 思政工作 | 评奖评优 | 实习就业 | 国际实习 | 国内合作科研 | 国际合作科研 | 校园服务 |\n    | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | ------------ | ------------ | -------- |\n    | 0        | 1        | 2        | 3        | 4        | 5        | 6        | 7        | 8            | 9            | 10       |",
         "maintainers": [
           "yonvenne",
           "zwithz"
@@ -62515,6 +62878,36 @@
     },
     "name": "浙江大学",
     "url": "physics.zju.edu.cn"
+  },
+  "zjut": {
+    "routes": {
+      "/da/:type": {
+        "path": "/da/:type",
+        "categories": [
+          "university"
+        ],
+        "example": "/zjut/da/1",
+        "parameters": {
+          "type": "分类，见下表"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "设计与建筑学院",
+        "maintainers": [
+          "yikZero"
+        ],
+        "description": "| 学院新闻 | 公告通知 | 科研申报 | 科研成果 | 文件与资源 | 学术交流 |\n| -------- | -------- | -------- | -------- | -------- | -------- |\n| 1        | 2        | 3        | 4        | 5        | 6        |",
+        "location": "da/index.ts"
+      }
+    },
+    "name": "浙江工业大学",
+    "url": "zjut.edu.cn"
   },
   "zjuvag": {
     "routes": {
