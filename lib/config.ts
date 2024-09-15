@@ -39,8 +39,8 @@ export type Config = {
         port?: string;
         auth?: string;
         url_regex: string;
+        strategy: 'on_retry' | 'all';
     };
-    proxyStrategy: string;
     pacUri?: string;
     pacScript?: string;
     accessKey?: string;
@@ -70,7 +70,9 @@ export type Config = {
         temperature?: number;
         maxTokens?: number;
         endpoint: string;
-        prompt?: string;
+        inputOption: string;
+        promptTitle: string;
+        promptDescription: string;
     };
     bilibili: {
         cookies: Record<string, string | undefined>;
@@ -167,6 +169,9 @@ export type Config = {
     };
     javdb: {
         session?: string;
+    };
+    keylol: {
+        cookie?: string;
     };
     lastfm: {
         api_key?: string;
@@ -268,7 +273,6 @@ export type Config = {
         username?: string[];
         password?: string[];
         authenticationSecret?: string[];
-        cookie?: string;
         authToken?: string[];
     };
     weibo: {
@@ -399,8 +403,8 @@ const calculateValue = () => {
             port: envs.PROXY_PORT,
             auth: envs.PROXY_AUTH,
             url_regex: envs.PROXY_URL_REGEX || '.*',
+            strategy: envs.PROXY_STRATEGY || 'all', // all / on_retry
         },
-        proxyStrategy: envs.PROXY_STRATEGY || 'all', // all / on_retry
         pacUri: envs.PAC_URI,
         pacScript: envs.PAC_SCRIPT,
         // access control
@@ -434,7 +438,9 @@ const calculateValue = () => {
             temperature: toInt(envs.OPENAI_TEMPERATURE, 0.2),
             maxTokens: toInt(envs.OPENAI_MAX_TOKENS, 0) || undefined,
             endpoint: envs.OPENAI_API_ENDPOINT || 'https://api.openai.com/v1',
-            prompt: envs.OPENAI_PROMPT || 'Please summarize the following article and reply with markdown format.',
+            inputOption: envs.OPENAI_INPUT_OPTION || 'description',
+            promptDescription: envs.OPENAI_PROMPT || 'Please summarize the following article and reply with markdown format.',
+            promptTitle: envs.OPENAI_PROMPT_TITLE || 'Please translate the following title into Simplified Chinese and reply only translated text.',
         },
 
         // Route-specific Configurations
@@ -534,6 +540,9 @@ const calculateValue = () => {
         },
         javdb: {
             session: envs.JAVDB_SESSION,
+        },
+        keylol: {
+            cookie: envs.KEYLOL_COOKIE,
         },
         lastfm: {
             api_key: envs.LASTFM_API_KEY,
@@ -639,7 +648,6 @@ const calculateValue = () => {
             username: envs.TWITTER_USERNAME?.split(','),
             password: envs.TWITTER_PASSWORD?.split(','),
             authenticationSecret: envs.TWITTER_AUTHENTICATION_SECRET?.split(','),
-            cookie: envs.TWITTER_COOKIE,
             authToken: envs.TWITTER_AUTH_TOKEN?.split(','),
         },
         weibo: {
