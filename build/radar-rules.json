@@ -2819,6 +2819,24 @@
   },
   "bupt.edu.cn": {
     "_name": "北京邮电大学",
+    "jwc": [
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg1.htm"
+        ],
+        "target": "/bupt/jwc/tzgg"
+      },
+      {
+        "title": "教务处",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xwzx2.htm"
+        ],
+        "target": "/bupt/jwc/xwzx"
+      }
+    ],
     ".": [
       {
         "title": "人才招聘",
@@ -3537,6 +3555,111 @@
           "/"
         ],
         "target": "/ccf/tfbd/:caty/:id"
+      }
+    ]
+  },
+  "ccfa.org.cn": {
+    "_name": "中国连锁经营协会",
+    "www": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp",
+          "/portal/cn/hybz_list.jsp",
+          "/portal/cn/lsbq.jsp",
+          "/portal/cn/hybzs_list.jsp",
+          "/portal/cn/fangyizhuanqu_list.jsp"
+        ],
+        "target": "/ccfa(_,url)=>{url=new URL(url);const type=url.searchParams.get(\"type\");return type?`/${type}`:\"\"}"
+      },
+      {
+        "title": "协会动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=1"
+        ],
+        "target": "/ccfa/1"
+      },
+      {
+        "title": "行业动态",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=2"
+        ],
+        "target": "/ccfa/2"
+      },
+      {
+        "title": "政策/报告/标准",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybz_list.jsp?type=33"
+        ],
+        "target": "/ccfa/33"
+      },
+      {
+        "title": "行业统计",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/lsbq.jsp?type=10003"
+        ],
+        "target": "/ccfa/10003"
+      },
+      {
+        "title": "创新案例",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybzs_list.jsp?type=10004"
+        ],
+        "target": "/ccfa/10004"
+      },
+      {
+        "title": "党建工作",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=7"
+        ],
+        "target": "/ccfa/7"
+      },
+      {
+        "title": "新消费论坛",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/xiehui_list.jsp?type=10005"
+        ],
+        "target": "/ccfa/10005"
+      },
+      {
+        "title": "政策/报告/标准 - 行业报告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybz_list.jsp?type=33"
+        ],
+        "target": "/ccfa/33"
+      },
+      {
+        "title": "政策/报告/标准 - 行业标准",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/hybz_list.jsp?type=34"
+        ],
+        "target": "/ccfa/34"
+      },
+      {
+        "title": "政策/报告/标准 - 行业政策",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/fangyizhuanqu_list.jsp?type=39"
+        ],
+        "target": "/ccfa/39"
+      },
+      {
+        "title": "政策/报告/标准 - 政策权威解读",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/portal/cn/fangyizhuanqu_list.jsp?type=40"
+        ],
+        "target": "/ccfa/40"
       }
     ]
   },
@@ -5433,6 +5556,16 @@
   },
   "douban.com": {
     "_name": "豆瓣",
+    "movie": [
+      {
+        "title": "豆瓣电影-即将上映",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/coming"
+        ],
+        "target": "/douban/movie/coming"
+      }
+    ],
     "book": [
       {
         "title": "豆瓣读书论坛",
@@ -11921,6 +12054,37 @@
       }
     ]
   },
+  "malaysiakini.com": {
+    "_name": "Malaysiakini 当今大马",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/malaysiakini/en"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:lang"
+        ],
+        "target": "/malaysiakini/:lang"
+      }
+    ],
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:lang/latest/:category"
+        ],
+        "target": "/malaysiakini/:lang/:category"
+      }
+    ]
+  },
   "mangadex.org": {
     "_name": "MangaDex",
     ".": [
@@ -16894,6 +17058,20 @@
       }
     ]
   },
+  "pconline.com.cn": {
+    "_name": "太平洋科技",
+    ".": [
+      {
+        "title": "科技新闻",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/focus/",
+          "/"
+        ],
+        "target": "/pconline/focus"
+      }
+    ]
+  },
   "penguinrandomhouse.com": {
     "_name": "Penguin Random House",
     ".": [
@@ -17120,6 +17298,27 @@
           "/users/:id"
         ],
         "target": "/pixiv/user/:id"
+      }
+    ]
+  },
+  "pixivision.net": {
+    "_name": "pixivision",
+    "www": [
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:lang"
+        ],
+        "target": "/pixivision/:lang"
+      },
+      {
+        "title": "Category",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:lang/c/:category"
+        ],
+        "target": "/pixivision/:lang/:category"
       }
     ]
   },
@@ -17355,7 +17554,7 @@
     "_name": "PornHub",
     ".": [
       {
-        "title": "Verified amateur / Model",
+        "title": "Model",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/model/:username/*"
@@ -17363,7 +17562,7 @@
         "target": "/pornhub/model/:username"
       },
       {
-        "title": "Verified model / Pornstar",
+        "title": "Pornstar",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/pornstar/:username/*"
@@ -19737,6 +19936,19 @@
       }
     ]
   },
+  "soundon.fm": {
+    "_name": "SoundOn",
+    "player": [
+      {
+        "title": "Podcast",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/p/:id"
+        ],
+        "target": "/soundon/p/:id"
+      }
+    ]
+  },
   "spotify.com": {
     "_name": "Spotify",
     "open": [
@@ -21417,6 +21629,16 @@
   },
   "theinitium.com": {
     "_name": "端传媒",
+    "app": [
+      {
+        "title": "App",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/t/latest/:category"
+        ],
+        "target": "/theinitium/app/:category"
+      }
+    ],
     ".": [
       {
         "title": "作者",
