@@ -330,6 +330,9 @@
   "/aibase/discover/:id?": [
     "nczitzk"
   ],
+  "/aibase/news": [
+    "zreo0"
+  ],
   "/aibase/topic/:id?/:filter?": [
     "nczitzk"
   ],
@@ -770,7 +773,9 @@
   ],
   "/bilibili/user/video-all/:uid/:disableEmbed?": [],
   "/bilibili/user/video/:uid/:disableEmbed?": [
-    "DIYgod"
+    "DIYgod",
+    "Konano",
+    "pseudoyu"
   ],
   "/bilibili/vsearch/:kw/:order?/:disableEmbed?/:tid?": [
     "pcrtool",
@@ -1289,6 +1294,9 @@
   "/ciidbnu/:id?": [
     "nczitzk"
   ],
+  "/cisia/:id?": [
+    "nczitzk"
+  ],
   "/civitai/discussions/:modelId": [
     "DIYgod"
   ],
@@ -1297,6 +1305,9 @@
   ],
   "/ciweimao/chapter/:id": [
     "keocheung"
+  ],
+  "/cjlu/yjsy/:cate": [
+    "chrisis58"
   ],
   "/clickme/:site/:grouping/:name": [
     "hoilc"
@@ -1576,7 +1587,8 @@
     "TonyRL"
   ],
   "/damai/activity/:city/:category/:subcategory/:keyword?": [
-    "hoilc"
+    "hoilc",
+    "Konano"
   ],
   "/dangdang/notice/:type?": [
     "353325487"
@@ -3010,6 +3022,12 @@
     "TonyRL",
     "Mas0n"
   ],
+  "/hfut/hf/notice/:type?": [
+    "batemax"
+  ],
+  "/hfut/xc/notice/:type?": [
+    "batemax"
+  ],
   "/hicairo/": [
     "cnkmmk"
   ],
@@ -3062,6 +3080,12 @@
   ],
   "/hkjunkcall/": [
     "nczitzk"
+  ],
+  "/hko/earthquake": [
+    "after9"
+  ],
+  "/hko/weather": [
+    "calpa"
   ],
   "/hljucm/yjsy/:category?": [
     "nczitzk"
@@ -3259,6 +3283,9 @@
   ],
   "/hypergryph/arknights/news/:group?": [
     "Astrian"
+  ],
+  "/i-cable/news/:category?": [
+    "quiniapiezoelectricity"
   ],
   "/ianspriggs/:category?": [
     "nczitzk"
@@ -3747,6 +3774,9 @@
   ],
   "/kpmg/insights/:lang?": [
     "LogicJake"
+  ],
+  "/ktown4u/artistBrandlist/:grpNo/:grpNo2?": [
+    "JamesWDGu"
   ],
   "/kuaidi100/track/:number/:id/:phone?": [
     "NeverBehave"
@@ -4940,10 +4970,11 @@
     "TonyRL",
     "micheal-death"
   ],
-  "/picuki/profile/:id/:functionalFlag?": [
+  "/picuki/profile/:id/:type?/:functionalFlag?": [
     "hoilc",
     "Rongronggg9",
-    "devinmugen"
+    "devinmugen",
+    "NekoAria"
   ],
   "/pikabu/:type/:name": [],
   "/pikabu/user/:name": [
@@ -5791,6 +5822,15 @@
   "/skeb/works/:username": [
     "SnowAgar25"
   ],
+  "/skebetter/illust/:type": [
+    "SnowAgar25"
+  ],
+  "/skebetter/:type": [
+    "SnowAgar25"
+  ],
+  "/skebetter/manga/:order": [
+    "SnowAgar25"
+  ],
   "/sketis/isabelle-dev/blog/:blog": [
     "Ritsuka314"
   ],
@@ -6004,6 +6044,9 @@
   ],
   "/storyfm/index": [
     "sanmmm"
+  ],
+  "/straitstimes/:category?/:section?": [
+    "quiniapiezoelectricity"
   ],
   "/stratechery/": [
     "chazeon"
@@ -6479,7 +6522,8 @@
   ],
   "/twitter/list/:id/:routeParams?": [
     "DIYgod",
-    "xyqfer"
+    "xyqfer",
+    "pseudoyu"
   ],
   "/twitter/media/:id/:routeParams?": [
     "DIYgod",
@@ -6859,7 +6903,8 @@
   "/weibo/user/:uid/:routeParams?": [
     "DIYgod",
     "iplusx",
-    "Rongronggg9"
+    "Rongronggg9",
+    "Konano"
   ],
   "/weibo/oasis/user/:userid": [
     "kt286"
